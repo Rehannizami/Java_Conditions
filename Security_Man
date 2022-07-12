@@ -1,0 +1,23 @@
+//using if else
+
+import java.util.*;
+
+class App
+{
+    void ifelse() {
+        Scanner sc= new Scanner(System.in);
+        double W;
+        System.out.println("Enter the hours in duty");
+        int H = sc.nextInt();
+        System.out.println("Enter the rate per hour");
+        int R = sc.nextInt();
+        if(H>56)
+        W = 40*R + 16*R*1.25 + (H-56)*R*1.5;
+        else if(H>40)
+        W= 40*R+(H-40)* 1.25*R;
+        else
+        W=R*H;
+        System.out.println("Weekl wages = "+W);
+    }
+
+
